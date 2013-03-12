@@ -1,0 +1,16 @@
+/*
+Theme Name: WP Skelette
+Theme URI: http://twitter.com/flug ;
+Author: Flug
+Author URI: http://twitter.com/flug ;
+Description: theme base for wordpress
+Version: 1
+License: Creative Common
+License URI: http://creativecommons.org/licenses/
+Tags: Skellete 
+
+*/
+
+@import url("css/base.css");
+@import url("css/skeleton.css");
+@import url("css/layout.css");

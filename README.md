@@ -1,0 +1,3 @@
+-=== Base theme wordpress HTML5 ===
+-Contributors: Flug
+-Tags: Wordpress Theme , Base 
