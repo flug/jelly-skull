@@ -43,8 +43,26 @@
 		</head>
 		<body <?php body_class(); ?>>
 			<div class="container">
-				<header>
-					
-					<?php wp_nav_menu(array('theme_location' => 'header', 'container'=>'nav', 'container_class'=>'row menu2')); ?>
-					
-				</header>
+				<div class="row">
+				<div class="twelve columns">
+					<div class="row">
+
+						<div class="seven columns">
+							<img src="http://lorempixel.com/g/545/130/">
+						</div>
+						<div class="five columns">
+							<div class="navbar navbar-inverse">
+								<ul class="eight  columns">
+
+									<li><?php echo HtmlHelper::ahref(array('url'=>'#', 'text'=>'lien 1')) ?></li>
+									<li><?php echo HtmlHelper::ahref(array('url'=>'#', 'text'=>'lien 2')) ?></li>
+									<li><?php echo HtmlHelper::ahref(array('url'=>'#', 'text'=>'lien 3')) ?></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<header>
+
+						<?php wp_nav_menu(array('theme_location' => 'header', 'container'=>'div', 'container_class'=>'navbar row')); ?>
+
+					</header>

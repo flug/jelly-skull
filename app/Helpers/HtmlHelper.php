@@ -11,7 +11,7 @@ class HtmlHelper extends AppHelper
 
 
 	public static function docType($type = 'html5') {
-	
+
 		$_docTypes = array(
 			'html4-strict' => '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">',
 			'html4-trans' => '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">',
@@ -58,6 +58,12 @@ class HtmlHelper extends AppHelper
 			$ext = ''; 
 		
 		return '<link rel="'.$types[$type]['rel'].'" type="'.$types[$type]['type'].'" media="'.$params['media'].'" href="'.$params['url'].$ext.'" />' ; 
+	}
+	static function ahref($params= array()){
+	#var_dump($params); 
+		$title= (isset($params['title'])) ? $params['title'] : $params['text']  ;
+		return '<a href="'.$params['url'].'" title="'.$title.'" >'.$params['text'].'</a>' ; 
+
 	}
 
 	

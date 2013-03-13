@@ -11,5 +11,36 @@ Tags: Skellete
 
 */
 
-@import url("css/base.css");
-@import url("css/layout.css");
+@import url("css/gumby.css");
+@import url("css/style.css");
+
+.navbar-inverse {
+background : #fff;
+}
+.navbar-inverse  ul li > a {
+    color: #4A4D50;
+    display: block;
+    font-size: 1rem;
+    height: 60px;
+    line-height: 58px;
+    padding: 0 16px;
+    text-shadow: none;
+    white-space: nowrap;
+}
+
+.sidebar-nav a {
+    color: #555555;
+    display: block;
+    padding: 8px 14px;
+}
+
+.icon-home{
+	content : "⌂";
+	height: inherit;
+}
+.pull-right {
+	float : right;
+}
+.pull-left{
+	float : left ; 
+}

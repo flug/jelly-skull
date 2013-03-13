@@ -8,7 +8,7 @@ define('ROOT', dirname(__FILE__));
 
 
 if (!defined('WP_CORE_INCLUDE_PATH')) {
-	define('CAKE_CORE_INCLUDE_PATH', ROOT . DS . 'lib');
+	define('WP_CORE_INCLUDE_PATH', ROOT . DS . 'Lib');
 }
 
 require(ROOT .DS . APP_DIR .DS ."load.php" );
@@ -44,6 +44,8 @@ if ( function_exists('register_sidebar') ) register_sidebar(
 	array(
 		'name' => 'Sidebar Lateral',
 		'id' => 'sidebar-lateral',
+		'before_title'  => '<h3 class="widgettitle">',
+	'after_title'   => '</h3>'
 		)
 	
 
@@ -55,3 +57,10 @@ if ( function_exists('register_sidebar') ) register_sidebar(
 
 		);
 		
+//$PiiWidget= new PiiWidget(); 
+
+
+
+add_action('widgets_init',function(){
+     return register_widget('Pii_Widget');
+});
