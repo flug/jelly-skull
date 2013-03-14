@@ -1,7 +1,9 @@
 </div>
 </div>
 </div>
-<footer class="container">
+<footer class="container footer">
+
+
 	<div class="row">
 		<ul>
 			<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('sidebar-footer') ) : ?>

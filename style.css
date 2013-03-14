@@ -15,23 +15,23 @@ Tags: Skellete
 @import url("css/style.css");
 
 .navbar-inverse {
-background : #fff;
+	background : #fff;
 }
 .navbar-inverse  ul li > a {
-    color: #4A4D50;
-    display: block;
-    font-size: 1rem;
-    height: 60px;
-    line-height: 58px;
-    padding: 0 16px;
-    text-shadow: none;
-    white-space: nowrap;
+	color: #4A4D50;
+	display: block;
+	font-size: 1rem;
+	height: 60px;
+	line-height: 58px;
+	padding: 0 16px;
+	text-shadow: none;
+	white-space: nowrap;
 }
 
 .sidebar-nav a {
-    color: #555555;
-    display: block;
-    padding: 8px 14px;
+	color: #555555;
+	display: block;
+	padding: 8px 14px;
 }
 
 .icon-home{
@@ -43,4 +43,12 @@ background : #fff;
 }
 .pull-left{
 	float : left ; 
+}
+
+.footer {
+	background: none repeat scroll 0 0 #4A4D50;
+	bottom: 0;
+	color: #FFFFFF;
+	position: fixed;
+	width: 100%;
 }

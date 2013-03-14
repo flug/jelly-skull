@@ -66,7 +66,9 @@ class HtmlHelper extends AppHelper
 
 	}
 
-	
+	static function url ($params = array()){
+		return get_bloginfo('template_directory').'/'.$params['url']; 
+	}
 }
 
 ?>

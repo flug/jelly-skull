@@ -22,7 +22,7 @@
 
 	<?php wp_link_pages(array('before' => '<p><strong>Pages:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
 
-<?php comments_popup_link('Aucun Commentaire &#187;', '1 Commentaire &#187;', '% Commentaires &#187;'); ?>
+
 <?php endwhile; endif; ?>
 <?php edit_post_link('Editer cet Article.', '<p>', '</p>'); ?>
 
