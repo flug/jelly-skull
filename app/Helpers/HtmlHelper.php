@@ -5,7 +5,7 @@
 * Html Helper
 */
 
-class HtmlHelper extends AppHelper
+class HtmlHelper  
 {
 	
 
@@ -40,7 +40,16 @@ class HtmlHelper extends AppHelper
 		if($fullbase == true) 
 			$full = get_bloginfo('template_directory') .'/js/' ; 
 
-		return '<script src="'.$full.$params['url'].'.js" type="text/javascript" ></script>'; 
+		if(is_array($params['url']))
+		{$output = ''; 
+			for($i = 0 ; $i < count($params['url']); $i++)
+				$output .='<script src="'.$full.$params['url'][$i].'.js" type="text/javascript" ></script>';
+			return $output;
+		}else
+		{
+			return '<script src="'.$full.$params['url'].'.js" type="text/javascript" ></script>'; 	
+		}
+		
 	} 
 	
 

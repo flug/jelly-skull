@@ -23,4 +23,6 @@ Fonctionnalite :
 
 Pii widget 
 
+Categories widget
+
 Slider 

@@ -88,10 +88,10 @@ class Pii_Widget extends WP_Widget{
 		echo $before_widget;
 
 		echo '<div class="row">'; 
-		echo '<div class="six columns">'; 
-echo '<adress class="pull-left"><i class="icon-home" ></i>'.nl2br($address).'</adress>';
+		echo '<div class="five columns">'; 
+echo '<address class="pull-left"><i class="icon-home" ></i>'.nl2br($address).'</address>';
 		?>
-		<ul class="pull-right">
+		<ul class="pull-left">
 			<?php 
 
 			echo '<li><i class="icon-phone"></i>'.$phone.'</li>';
